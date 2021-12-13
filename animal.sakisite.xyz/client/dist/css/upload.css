@@ -1,0 +1,27 @@
+.file-input-wrapper {
+		cursor: pointer;
+		width: 30px;
+		position:relative;
+		
+	}
+	
+	.file-input-wrapper > .btn-file-input {
+		background-color: #000;
+		border: 1px solid #000;
+		color: #fff;
+		cursor: pointer;
+		width: 85px;
+		padding: 1px !important;
+	}
+	
+	.file-input-wrapper > input[type="file"] {
+		cursor: pointer;
+		opacity: 0;
+		padding: 7px;
+		position: absolute;
+		top: 1px;
+		width: 86px;
+	}
+	input[type=file]::-webkit-file-upload-button {
+	  cursor: pointer;
+	}

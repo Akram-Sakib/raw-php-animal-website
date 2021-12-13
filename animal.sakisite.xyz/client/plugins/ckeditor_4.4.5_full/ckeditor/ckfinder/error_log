@@ -1,0 +1,1 @@
+[15-Nov-2014 15:23:59 UTC] PHP Fatal error:  Call to undefined function resolveUrl() in /home/itwebtech9456/public_html/skillcube/Skillcube_admin/js/plugins/ckeditor_4.4.5_full/ckeditor/ckfinder/config.php on line 99

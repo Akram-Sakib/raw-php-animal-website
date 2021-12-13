@@ -1,0 +1,5 @@
+[08-May-2021 17:46:25 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/sakisite/animal.sakisite.xyz/lib/Database.php on line 17
+[08-May-2021 17:46:25 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/sakisite/animal.sakisite.xyz/lib/Database.php on line 27
+[08-May-2021 17:46:25 UTC] PHP Warning:  Database::select(): Couldn't fetch mysqli in /home/sakisite/animal.sakisite.xyz/lib/Database.php on line 27
+[02-Jun-2021 03:45:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sakisite/animal.sakisite.xyz/inc/header.php:118) in /home/sakisite/animal.sakisite.xyz/post.php on line 6
+[02-Jun-2021 03:45:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sakisite/animal.sakisite.xyz/inc/header.php:118) in /home/sakisite/animal.sakisite.xyz/post.php on line 55

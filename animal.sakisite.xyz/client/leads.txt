@@ -1,0 +1,8 @@
+Leads Mail	From Name	Time	Serial	Status	
+"marlinmoli8963@hotmail.com"	"Marlin moli "	"11-02-2018 13:47"	"1"	"Waiting"
+"rakibulislamcpa4@gmail.com"	"Rakibul Islam "	"11-02-2018 09:53"	"1"	"Waiting"
+"mhstar414@gmail.com"	"MH STAR "	"11-02-2018 09:33"	"6"	"Waiting"
+"skhanitsolution@gmail.com"	"Wild "	"11-02-2018 09:34"	"6"	"Waiting"
+"growingitbd@gmail.com"	"Grow "	"11-02-2018 09:30"	"6"	"Waiting"
+"mika832b83@gmail.com"	"bikasil mikasin "	"11-02-2018 09:29"	"6"	"Waiting"
+

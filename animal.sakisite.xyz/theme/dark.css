@@ -1,0 +1,1029 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #000000;
+}
+/* ====================================================================== */
+                          /* Header section Css End */
+/* ====================================================================== */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.equal_margin{
+  padding: 10px 0px 10px 0;
+  background-color: #333;
+  border-bottom: 2px solid #7b7b7b;
+}
+/* Add a black background color to the top navigation */
+.top_bar {
+  background-color: #333;
+  overflow: hidden;
+  color: #fff;
+}
+
+.top_bar_left{
+  width: 70%;
+  float: left;
+}
+.left_logo {
+  float: left; 
+  width: 10%;
+  margin-right: 3%;
+}
+.left_logo img {
+  width: 100%; 
+  height: auto;
+}
+
+.right_text{
+  float: left;
+  width: 80%;
+}
+.right_text h2 {
+    margin: 0;
+    font-size: 20px;
+}
+.right_text p {
+    margin: 0;
+    margin-top: -5px;
+    color: #fff;
+}
+.top_bar_right{
+  width: 30%;
+  float: right;
+}
+.search{
+  float: right;
+}
+
+/* Search Button Design */
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #0a1015;
+    color: #ffffff;
+    font-size: 17px;
+    border: 1px solid #0a1015;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+  background: #161616;
+  border: 1px solid #161616;
+  border-left: none;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Search Button Design End */
+.example{
+
+}
+.example input[type=text]{}
+.example button{}
+
+/* ======================================================================= */
+.nav_bg_color {
+    z-index: 5;
+    background-color: #000;
+    border-bottom: 2px solid #fff;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #000;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #1d1d1d;
+  color: white;
+}
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* ====================================================================== */
+
+.for_dropdown{
+  position: relative;
+}
+.for_dropdown ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #000000;
+  position: absolute;
+  z-index: 3;
+  top: 55px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.for_dropdown ul li{
+
+}
+.for_dropdown ul li a {
+    width: 100%;
+    text-align: left;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+.for_dropdown:hover ul{
+  left: -132px;
+  opacity: 1;
+  visibility: visible;
+}
+.contact_dropdown ul{
+  top: 58px;
+}
+.contact_dropdown:hover ul{
+  left: -137px;
+}
+
+
+/* ====================================================================== */
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 10%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.closebtn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+}
+
+
+/* ====================================================================== */
+                          /* Header section Css End */
+/* ====================================================================== */
+
+
+/* ====================================================================== */
+                          /* Hero section Css Start */
+/* ====================================================================== */
+/* Position the image container (needed to position the left and right arrows) */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 8);
+  color: yellow;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.pos_top{
+  margin-top: -30px;
+  margin-bottom: 6px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ====================================================================== */
+                          /* Hero section Css End */
+/* ====================================================================== */
+
+
+/* ====================================================================== */
+                          /* Work Section Start */
+/* ====================================================================== */
+.work{
+  padding: 80px 0px 80px 0;
+}
+.work_main{}
+
+/* Flip-Box section Css Start */
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 250px;
+    perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+    background-color: transparent;
+    color: black;
+    border: 2px dotted #ffffff;
+}
+.flip-box-front img {
+    width: 20%;
+    margin-top: 30px;
+    height: auto;
+}
+
+.flip-box-front h2, .flip-box-front h3{
+    color: #f1c40f;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px 20px 0 20px;
+    border: 2px dotted #fff;
+}
+.flip-box-back p{
+  text-align: center;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* Flip Box Animation */
+.rotate-center {
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+/* Flip-Box section Css End */
+
+/* ====================================================================== */
+                          /* Work Section End */
+/* ====================================================================== */
+
+
+/* ====================================================================== */
+                          /* Work Section Start */
+/* ====================================================================== */
+.main_section_aftr_row{
+  
+}
+.left_main_Content{
+}
+/* Add a card effect for articles */
+/* The sidebar menu */
+.my_card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.fakeimg img{
+  width: 100%;
+  height: auto;
+}
+.height_img{
+  
+}
+
+.height_img img{
+  height: 300px;
+}
+.my_card_post{}
+.my_card_post h2{
+  color: #000000;
+}
+.my_card_post h5{}
+.my_card_post p{
+  margin: 15px 0 15px 0;
+}
+.my_card_post a {
+  text-decoration: none;
+}
+.post_justify p{
+  text-align: justify;
+}
+.remove_cls{
+  margin-top: 8px;
+}
+
+.remove_cls a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  font-size: 1rem;
+  color: #484848;
+}
+
+.remove_cls a:hover {
+  background-color: transparent;
+  color: #000000;;
+  text-decoration: underline;
+}
+
+.my_card_post .read_more {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #0f0f0f;
+  color: white;
+  float: right;
+}
+.my_card_post .read_more:hover{
+  background-color:#000000;
+  color: white;
+}
+.right_sidebar {
+
+}
+.right_sidebar h2 {
+    color: #000000;
+    font-size: 22px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+.right_sidebar h3 {
+    color: #000000;
+    font-size: 22px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+}
+.right_sidebar p{}
+
+.author_details{
+}
+.author_details p{
+  margin-top: 20px;
+}
+/* Social Media Icon */
+.my_social {
+    padding: 20px;
+    font-size: 30px;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.my_social:hover {
+    opacity: 0.7;
+    color: #000000;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+ 
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+/* Social Media Icon End */
+
+.category_list{}
+.category_list h3{
+  background-color: #1d1c1c;
+  color: #fff;
+  border-bottom: 2px solid #000000;
+  padding: 6px;
+}
+
+.category_list ul {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.category_list ul li{}
+.category_list ul li a {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    font-weight: 500;
+    background: white;
+    padding: 6px;
+    border-bottom: 1px solid #000000;
+}
+
+.advertise{}
+.advertise img{
+  width: 100%;
+  height: auto;
+}
+
+.same_post{
+  margin-bottom: 40px;
+}
+.left_post_img {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    height: 65px;
+}
+.left_post_img img {
+    width: 100%;
+    height: 100%;
+}
+.right_content{
+  width: 65%;
+  float: left;
+}
+.right_content h4 {
+    font-size: 19px;
+    margin: 0;
+}
+.right_content p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+.right_content a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Pagination links */
+.pagination a {
+    color: #fff;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    background-color: #13110d;
+    margin-left: 8px;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: #13110d;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #000000;}
+/* ====================================================================== */
+                          /* Work  Section End */
+/* ====================================================================== */
+
+/* ====================================================================== */
+                          /* Footer Top Section Start */
+/* ====================================================================== */
+.footer_top{
+  padding: 50px 0;
+  background-color: #212529;
+  margin-top: 30px;
+}
+.magazine{}
+.megaZine_wrap {
+    margin-bottom: 20px;
+}
+.megaZine_wrap img {
+    width: 10%;
+    float: left;
+    margin-right: 5%;
+}
+.megaZine_wrap h2 {
+    width: 85%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.magazine p {
+    color: #ffffff;
+    font-size: 14px;
+    padding-right: 75px;
+}
+
+.footer_page{}
+.footer_page h2 {
+    color: #ffffff;
+    font-size: 21px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+.footer_page h6{}
+.footer_page h6 a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Footer Top Social Networks */
+
+.social_networks{}
+.social_networks h2 {
+    color: #ffffff;
+    font-size: 21px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+
+.inside_social {
+  display: inline-block;
+  top:50%;
+  left:50%;
+  -ms-transform:translate(-1%,120%);
+  -webkit-transform:translate(-1%,120%);
+      transform: translate(-1%,120%);
+}
+
+/* Icons */
+
+.inside_social a {
+    color: #fff;
+    background: #000000;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-family: fontawesome;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding-top: 12px;
+    margin: 0 2px;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    -webkit-font-smoothing: antialiased;
+}
+
+.inside_social a:hover {
+  background: #000000;
+}
+
+/* pop-up text */
+
+.inside_social a span {
+  color:rgb(255, 255, 255);
+  position:absolute;
+  font-family:sans-serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  z-index:-1;
+  font-size:14px;
+  border-radius:2px;
+  background:rgb(0, 0, 0);
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* pop-up text arrow */
+
+.inside_social a span:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+}
+
+/* text pops up when icon is in hover state */
+
+.inside_social a:hover span {
+  bottom:50px;
+  visibility:visible;
+  opacity:1;
+}
+
+/* font awesome icons */
+
+.inside_social a:nth-of-type(1):before {
+content:'\f09a';
+}
+.inside_social a:nth-of-type(2):before {
+content:'\f099';
+}
+.inside_social a:nth-of-type(3):before {
+content:'\f0d5';
+}
+.inside_social a:nth-of-type(4):before {
+content:'\f0e1';
+}
+
+
+/* ====================================================================== */
+                          /* Footer Top Section End */
+/* ====================================================================== */
+
+/* ====================================================================== */
+                          /* Footer Section Start */
+/* ====================================================================== */
+
+.main_footer{
+  padding: 30px 0;
+  background-color: black;
+}
+.copyright_text{}
+.copyright_text p{
+  margin: 0;
+  color: #fff;
+}
+
+/* Scroll To top Button */
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background-color: #F39C12;
+    color: #fff;
+    border-radius: 0;
+    z-index: 2;
+}
+.back-to-top:hover{
+  color: #fff;
+}
+
+/* ====================================================================== */
+                          /* Footer Section End */
+/* ====================================================================== */
+
+
+/* ====================================================================== */
+/***************************** Blog Page ***************************/
+/* ====================================================================== */
+
+.blog_main_section {
+    padding-top: 90px;
+}
+
+
+/* ====================================================================== */
+/***************************** Blog Page ***************************/
+/* ====================================================================== */
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.about_section{
+  padding: 80px 0;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section-top {
+    padding: 50px;
+    text-align: center;
+    background-color: #101010;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.our_team{}
+.our_team .team_heading{
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.team_head_clr{}
+.team_head_clr a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #131313;
+}
+.team_head_clr a:hover{
+  background-color: #000000;
+}
+.team_head_clr h2{
+  color: #000000;
+  margin-top: 15px;
+}
+
+/* ====================================================================== */
+/***************************** 404 Page ***************************/
+/* ====================================================================== */
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.custom_width_404{
+width: 100%;
+}
+.four_zero_four_bg{
+ 
+ background-image: url(../images/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+.four_zero_four_bg h1 {
+    font-size: 80px;
+    color: #f1c40f;
+}
+ 
+  .four_zero_four_bg h3{
+       font-size:80px;
+       color: #f1c40f;
+       }
+       
+.link_404{      
+  color: #fff!important;
+    padding: 10px 20px;
+    background: #f1c40f;
+    margin: 20px 0;
+    display: inline-block;}
+  .contant_box_404{ margin-top:-50px;}
+
+/* ====================================================================== */
+/***************************** 404 Page ***************************/
+/* ====================================================================== */
+
+/* ====================================================================== */
+/***************************** Post Page ***************************/
+/* ====================================================================== */
+.post_card{}
+.post_card h2 {
+    color: #fff;
+    background-color: #1d1c1b;
+    padding: 5px;
+    border-bottom: 4px solid #000000;
+    margin-bottom: 20px;
+}
+.post_card img{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.post_card img:hover{
+  opacity: 0.5;
+}
+
+/* ====================================================================== */
+/***************************** Post Page ***************************/
+/* ====================================================================== */
+.h2_custom{
+    padding-bottom:8px;border-bottom: 2px solid #000000;
+}
